@@ -71,6 +71,3 @@ class TestVarasto(unittest.TestCase):
 
     def test_str_palautus_toimii(self):
         self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
-
-    def test_broken_test(self):
-        self.assertEqual(self.varasto.saldo, 999)
