@@ -52,6 +52,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(testi_varasto.saldo, testi_varasto.tilavuus)
 
     def test_negatiivista_numeroa_ei_voi_lisata(self):
+        # saldon ei pitäisi muuttua
         temp_saldo = self.varasto.saldo
         self.varasto.lisaa_varastoon(-1)
         self.assertAlmostEqual(self.varasto.saldo, temp_saldo)
