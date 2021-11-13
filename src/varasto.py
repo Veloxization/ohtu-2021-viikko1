@@ -15,6 +15,21 @@ class Varasto:
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
+        # This comment is completely unnecessary but I'm making it long to break pylint rules and to get a worse score. Let's hope it works!
+        for width in range(3):
+            for height in range(3):
+                for depth in range(3):
+                    volume = width*height*depth
+        random_dictionary = {"volume": volume}
+        print(random_dictionary)
+        while random_dictionary:
+            print("Emptying the random dictionary")
+            random_dictionary = None
+            print("while loop ends")
+        print(1)
+        print(2)
+        print(3)
+        print(4)
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
