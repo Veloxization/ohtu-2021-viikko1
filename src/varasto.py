@@ -37,7 +37,7 @@ class Varasto:
 
         return maara
 
-    # This function was created to go around the complexity requirements of __init__. This is handled from a separate function though there is probably a better way to do this.
+    # Fix complexity of __init__
     def _get_tilavuus(self, tilavuus):
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
